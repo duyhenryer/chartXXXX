@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  cloudflare-tunnel:
+  - apiVersion: v2
+    appVersion: 2023.8.1
+    created: "2023-08-30T16:52:03.316281991Z"
+    description: Creation of a cloudflared deployment - a reverse tunnel for an environment
+    digest: ca4e0afc7d0a33f51c5d3e7caf303a634b97dd7f17ca29603acce0633aeeb56c
+    icon: https://developers.cloudflare.com/cloudflare-one/favicon-32x32.png
+    name: cloudflare-tunnel
+    type: application
+    urls:
+    - https://github.com/duyhenryer/chart/releases/download/cloudflare-tunnel-0.1.1/cloudflare-tunnel-0.1.1.tgz
+    version: 0.1.1
+generated: "2023-08-30T16:52:03.316331294Z"
