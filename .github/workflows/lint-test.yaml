@@ -51,9 +51,11 @@ jobs:
       
       - name: Run chart-testing (lint)
         run: |
+          env
           /usr/local/bin/ct lint --debug \
             --config ./.github/configs/ct-lint.yaml \
             --lint-conf ./.github/configs/lintconf.yaml \
+            --target-branch main \
             --helm-repo-extra-args myrepo="--username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }}"
       
       - name: Run docs-testing (helm-docs)
