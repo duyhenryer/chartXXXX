@@ -14,7 +14,7 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Helm
-        uses: azure/setup-helm@v3
+        uses: azure/setup-helm@v3.5
 
       - name: Set up python
         uses: actions/setup-python@v4
@@ -51,6 +51,7 @@ jobs:
       
       - name: Run chart-testing (lint)
         run: |
+          env
           /usr/local/bin/ct lint --debug \
             --config ./.github/configs/ct-lint.yaml \
             --lint-conf ./.github/configs/lintconf.yaml \
