@@ -1,4 +1,4 @@
-# Chart Repo
+# Chart
 
 A chart repo
 
