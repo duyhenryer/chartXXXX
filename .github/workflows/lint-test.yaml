@@ -55,7 +55,7 @@ jobs:
           /usr/local/bin/ct lint --debug \
             --config ./.github/configs/ct-lint.yaml \
             --lint-conf ./.github/configs/lintconf.yaml \
-            --helm-repo-extra-args myrepo="--username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }}"
+            --helm-repo-extra-args myrepo="--username ${{ github.repository_owner }} --password ${{ secrets.GITHUB_TOKEN }}"
       
       - name: Run docs-testing (helm-docs)
         id: helm-docs
